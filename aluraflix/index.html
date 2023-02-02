@@ -7,16 +7,24 @@
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <title>Document</title>
 </head>
-<body>
+  <body>
     <div class="container">
-        <h1 class="page-title">
-          Aluraflix
-        </h1>
-        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+      <h1 class="page-title">
+        Aluraflix
+      </h1>
+      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+      <p class="page-subtitle">
+        Qual seu filme favorito?
+      </p>
+      <div class="form-wrapper">
+        <input type="text" id="filme" name="filme" placeholder="Insira endereço de imagem">
+        <button onClick="addFilmesSeries()">Adicionar Filme</button>
       </div>
-      <a href="https://alura.com.br/" target="_blank">
-        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-      </a>
-    <script type="text/javascript" src="setup.js"></script>
-</body>
+    </div>
+    <div id="listaFilmes"></div>
+    <a href="https://alura.com.br/" target="_blank">
+      <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+      <script type="text/javascript" src="setup.js"></script>
+  </body>
 </html>

@@ -1,4 +1,6 @@
 
+/*
+//Aula 01 Alurraflix + opcoes de laço
 var filmesList = [
     "http://bancodeseries.com.br/images/posters/17372.jpg",
     "https://ludopedio.org.br/wp-content/uploads/ted-lasso-682x1024.jpeg",
@@ -22,3 +24,13 @@ document.write("<br>")
 filmesList.forEach(element => {
     document.write("<img src=" + filmesList[length++] + ">")
 });
+*/
+
+
+function addFilmesSeries() {
+    var filmesSeries = document.getElementById('filme').value
+    var elementListaFilme = document.getElementById('listaFilmes')
+
+    elementListaFilme.innerHTML = elementListaFilme.innerHTML + '<img src=' + filmesSeries + '>'
+    document.getElementById('filme').value = ''
+}
