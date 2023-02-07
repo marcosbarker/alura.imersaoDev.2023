@@ -1,4 +1,4 @@
-//https://docs.awesomeapi.com.br/api-de-moedas./;; b6bbb,
+//https://docs.awesomeapi.com.br/api-de-moedas./;
 const request = require('request')
 
 const moedas = 'USD-BRL,EUR-BRL,BTC-BRL'
@@ -21,8 +21,9 @@ const response_dolar = function(erro, res, body) {
     let json = JSON.parse(body)
     cotacao = json.USDBRL.bid
     data = json.USDBRL.create_date
-    console.log('Dolar($) R$ ' + cotacao + ' em ' + data)
+    console.log('Dolar($) R$ ' + cotacao + ' em ' + data)  
 }
+
 
 const response_euro = function(erro, res, body) {
     let json = JSON.parse(body)
@@ -31,4 +32,4 @@ const response_euro = function(erro, res, body) {
     console.log('Euro(€) R$ ' + cotacao + ' em ' + data)
 } 
 
-request(opcoes, response_euro)
+request(opcoes, response_dolar)
